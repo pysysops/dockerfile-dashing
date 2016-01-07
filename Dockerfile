@@ -1,6 +1,6 @@
 FROM frvi/ruby
 
-MAINTAINER Fredrik Vihlborg <fredrik.wihlborg@gmail.com>
+MAINTAINER Tim Birkett <tim.birkett@theladbiblegroup.com>
 
 RUN gem install bundle dashing-rails
 RUN mkdir /dashing && \
