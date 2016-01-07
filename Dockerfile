@@ -2,7 +2,7 @@ FROM frvi/ruby
 
 MAINTAINER Fredrik Vihlborg <fredrik.wihlborg@gmail.com>
 
-RUN gem install bundle dashing
+RUN gem install bundle dashing-rails
 RUN mkdir /dashing && \
     dashing new dashing && \
     cd /dashing && bundle && \
@@ -24,4 +24,3 @@ EXPOSE $PORT
 WORKDIR /dashing
 
 CMD ["/run.sh"]
-
