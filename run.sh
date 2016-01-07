@@ -32,5 +32,4 @@ if [[ ! -z "$PORT" ]]; then
 fi
 
 # Start dashing
-exec dashing start $PORT_ARG
-
+exec puma config.ru $PORT_ARG

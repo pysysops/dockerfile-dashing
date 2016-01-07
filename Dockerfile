@@ -2,7 +2,7 @@ FROM frvi/ruby
 
 MAINTAINER Tim Birkett <tim.birkett@theladbiblegroup.com>
 
-RUN gem install bundle dashing-rails
+RUN gem install bundle dashing puma
 RUN mkdir /dashing && \
     dashing new dashing && \
     cd /dashing && bundle && \
