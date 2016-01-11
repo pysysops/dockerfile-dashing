@@ -1,0 +1,3 @@
+[submodule "dashing-cyclist"]
+	path = dashing-cyclist
+	url = https://github.com/markwainwright/dashing-cyclist.git
