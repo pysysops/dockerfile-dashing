@@ -8,7 +8,7 @@ RUN apt-get update && \
     apt-get install -y make g++ nodejs ca-certificates libmysqlclient-dev && \
     apt-get -y clean
 
-RUN gem install bundle dashing puma sinatra_cyclist
+RUN gem install bundle dashing puma
 
 RUN mkdir /dashing && \
     dashing new dashing && \
