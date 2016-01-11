@@ -1,4 +1,4 @@
-FROM frvi/ruby
+FROM ruby:latest
 
 MAINTAINER Tim Birkett <tim.birkett@theladbiblegroup.com>
 
