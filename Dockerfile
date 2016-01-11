@@ -2,7 +2,14 @@ FROM ruby:latest
 
 MAINTAINER Tim Birkett <tim.birkett@theladbiblegroup.com>
 
+RUN echo "deb http://ftp.us.debian.org/debian wheezy-backports main" >> /etc/apt/sources.list
+RUN apt-get update && \
+    apt-get -y upgrade && \
+    apt-get install -y make g++ nodejs ca-certificates libmysqlclient-dev && \
+    apt-get -y clean
+
 RUN gem install bundle dashing puma sinatra_cyclist
+
 RUN mkdir /dashing && \
     dashing new dashing && \
     cd /dashing && bundle && \
