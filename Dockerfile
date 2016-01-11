@@ -2,7 +2,7 @@ FROM frvi/ruby
 
 MAINTAINER Tim Birkett <tim.birkett@theladbiblegroup.com>
 
-RUN gem install bundle dashing puma
+RUN gem install bundle dashing puma sinatra_cyclist
 RUN mkdir /dashing && \
     dashing new dashing && \
     cd /dashing && bundle && \
