@@ -22,6 +22,7 @@ RUN mkdir /dashing && \
     ln -s /dashing/config/config.ru /dashing/config.ru && \
     ln -s /dashing/config /config
 
+COPY dashing-cyclist/assets/javascripts/cycler.coffee /dashing/assets/javascripts/cycler.coffee
 COPY run.sh /
 
 VOLUME ["/dashboards", "/jobs", "/config", "/public", "/widgets"]
