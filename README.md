@@ -1,7 +1,7 @@
 # Dashing
 Run [Dashing](http://dashing.io/) in a [Docker](http://docker.io/) container.
 
-Link: [frvi/dashing](https://registry.hub.docker.com/u/pysysops/docker-dashing/)
+Link: [pysysops/docker-dashing](https://registry.hub.docker.com/u/pysysops/docker-dashing/)
 
 
 ## Run
@@ -61,11 +61,8 @@ Edit this file to change your API key, to add authentication and more.
 
 
 ### Thanks
-- [@frvi](https://github.com/frvi), Awesome DockerFile example
+- [@frvi](https://github.com/frvi), For the original DockerFiles
 - [@mattgruter](https://github.com/mattgruter), Awesome contributions!
 - [@rowanu](https://github.com/rowanu), [Hotness Widget](https://gist.github.com/rowanu/6246149).
 - [@munkius](https://github.com/munkius), [fork](https://gist.github.com/munkius/9209839) of Hotness Widget.
 - [@chelsea](https://github.com/chelsea), [Random Aww](https://gist.github.com/chelsea/5641535).
-
-### TODO:
-- [ ] Use official Ruby image from Docker hub.
